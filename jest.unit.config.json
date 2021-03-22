@@ -1,0 +1,6 @@
+{
+    "testMatch": ["**/tests/unit/**/*.[jt]s?(x)"],
+    "collectCoverageFrom": ["main.js"],
+    "collectCoverage": true,
+    "testTimeout": 5000
+}

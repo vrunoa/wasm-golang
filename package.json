@@ -1,0 +1,27 @@
+{
+  "name": "golang-npm-bridge",
+  "version": "1.0.0",
+  "description": "A quick example on compiling go code to wasm",
+  "main": "main.js",
+  "scripts": {
+    "eslint": "eslint main.js tests/*",
+    "bridge": "node main.js",
+    "wasm:build": "GOOS=js GOARCH=wasm go build -o main.wasm main.go",
+    "test:unit": "jest --env node --config jest.unit.config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.prod.sjc3.saucelabs.net:vrunoa/wasm-golang.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-jest": "^24.1.5",
+    "eslint-plugin-prettier": "^3.3.1",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1"
+  }
+}
